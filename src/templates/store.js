@@ -17,7 +17,6 @@ export const query = graphql`
 export default class Store extends React.Component {
     render() {
         console.log('Props = ' , this.props);
-        
         return (
             <Layout {...this.props}>
             <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
