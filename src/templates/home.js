@@ -19,6 +19,7 @@ export default class Home extends React.Component {
         return (
             <Layout {...this.props}>
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
+let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
 
                 })}
                 <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
