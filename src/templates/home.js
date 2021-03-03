@@ -19,21 +19,21 @@ export default class Home extends React.Component {
         return (
             <Layout {...this.props}>
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-let Component = components[component]
+                    let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
+                    let Component = components[component]
 
-if(component === 'hero_section') {
-    return (
- <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
-    )
-}
+                    if (component === 'hero_section') {
+                        return (
+                            <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
+                        )
+                    }
                 })}
                 <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
                     {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-                        
+
                         let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                         let Component = components[component];
-                        console.log('Props = ' , this.props);                        
+                        console.log('Props = ', this.props);
                         return (
                             <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                         )
