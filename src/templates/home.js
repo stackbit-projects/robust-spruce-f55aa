@@ -32,7 +32,7 @@ export default class Home extends React.Component {
                 })}
                 <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
                     {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
-console.log('Props = ' , );
+console.log('Props = ' , this.props);
 
                         let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                         let Component = components[component];
