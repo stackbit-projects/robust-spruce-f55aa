@@ -25,8 +25,6 @@ export default class Product extends React.Component {
         return (
             <Layout {...this.props}>
 
-{ _.get(this.props) }
-
 
                 <main className="content">
                     <section className="product content__row content__row--full-width">
