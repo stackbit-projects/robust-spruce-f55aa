@@ -20,7 +20,7 @@ export default class Home extends React.Component {
             <Layout {...this.props}>
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
 let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
-let Com
+let Component = components[co]
 
 if(component === 'hero_section') {
     return (
