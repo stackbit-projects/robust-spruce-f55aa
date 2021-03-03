@@ -18,7 +18,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <Layout {...this.props}>
-            {/* <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
+            <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
                     let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                     let Component = components[component];
@@ -26,7 +26,7 @@ export default class Home extends React.Component {
                     <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                     )
                 })}
-            </main> */}
+            </main>
             </Layout>
         );
     }
