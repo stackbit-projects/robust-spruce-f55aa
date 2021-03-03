@@ -23,14 +23,14 @@ export default class Home extends React.Component {
                     let Component = components[component]
 
 if(component === 'hero_section') {
-    
-}
-
-                    return (
+ return (
 
                         
                         <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                     )
+}
+
+                   
 
                 })}
                 <main className={'content' + (_.get(this.props, 'pageContext.frontmatter.page_css_class', null) ? (' ' + _.get(this.props, 'pageContext.frontmatter.page_css_class', null)) : '')}>
