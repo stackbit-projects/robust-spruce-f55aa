@@ -21,7 +21,7 @@ export default class Home extends React.Component {
                 {_.map(_.get(this.props, 'pageContext.frontmatter.sections', null), (section, section_idx) => {
                     let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                     let Component = components[component]
-                    if (component === 'hero__section') {
+                    if (component === 'hero_section') {
                         return (
                             <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                         )
