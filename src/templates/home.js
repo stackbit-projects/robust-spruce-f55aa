@@ -18,7 +18,6 @@ export default class Home extends React.Component {
     componentDidMount() {
         console.log('Props = ', this.props);
     }
-
     render() {
         return (
             <Layout {...this.props}>
