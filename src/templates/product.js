@@ -27,7 +27,7 @@ export default class Product extends React.Component {
 
 
 
-                
+
                 <main className="content">
                     <section className="product content__row content__row--full-width">
                         <div className="product__background-left">
