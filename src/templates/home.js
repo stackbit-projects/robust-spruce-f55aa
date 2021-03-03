@@ -32,7 +32,6 @@ export default class Home extends React.Component {
 
                         let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));
                         let Component = components[component];
-                        console.log('Props = ', this.props);
                         return (
                             <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                         )
