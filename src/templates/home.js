@@ -15,9 +15,6 @@ export const query = graphql`
 `;
 
 export default class Home extends React.Component {
-    componentDidMount() {
-        console.log('Props = ', this.props , 'hhhh');
-    }
     render() {
         return (
             <Layout {...this.props}>
