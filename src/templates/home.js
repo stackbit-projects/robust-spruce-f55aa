@@ -24,7 +24,7 @@ export default class Home extends React.Component {
 
                     return (
 
-                        {s   }
+                        {co   }
                         <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
                     )
 
