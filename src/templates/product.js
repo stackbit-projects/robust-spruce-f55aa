@@ -25,7 +25,7 @@ export default class Product extends React.Component {
         return (
             <Layout {...this.props}>
 
-{ _.get }
+{ _.get(this.props) }
 
 
                 <main className="content">
