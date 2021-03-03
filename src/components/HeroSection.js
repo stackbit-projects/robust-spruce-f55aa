@@ -28,7 +28,6 @@ export default class HeroSection extends React.Component {
                         </Link>
                       )
                   })}
-                  nmnsmnsmn
                 </div>
             </section>
         );
