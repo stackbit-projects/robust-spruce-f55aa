@@ -15,6 +15,7 @@ export const query = graphql`
 `;
 
 export default class Home extends React.Component {
+    cdm
     console.log('Props = ' , );
     
     render() {
