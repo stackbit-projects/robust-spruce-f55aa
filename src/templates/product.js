@@ -24,6 +24,7 @@ export default class Product extends React.Component {
         let primary_bg_img_opacity = primary_bg_img_opacity_pct * 0.01;
         return (
             <Layout {...this.props}>
+                <h1>hello world</h1>
                 <main className="content">
                     <section className="product content__row content__row--full-width">
                         <div className="product__background-left">
