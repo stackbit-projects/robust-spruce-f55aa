@@ -24,7 +24,7 @@ let Component = components[component]
 
 if(component === 'hero_section') {
     return (
-
+ <Component key={section_idx} {...this.props} section={section} page={this.props.pageContext} site={this.props.pageContext.site} />
     )
 }
                 })}
